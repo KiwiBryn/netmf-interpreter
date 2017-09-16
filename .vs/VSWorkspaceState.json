@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Framework\\CorDebug",
+    "\\Framework\\CorDebug\\vs15",
+    "\\Product\\AllSDK",
+    "\\Product\\AllSDK\\ProjectTemplates",
+    "\\Product\\AllSDK\\ProjectTemplates\\CSharp",
+    "\\Product\\AllSDK\\ProjectTemplates\\CSharp\\ExeTemplate",
+    "\\Product\\Samples",
+    "\\Product\\v4.3",
+    "\\Product\\v4.4"
+  ],
+  "PreviewInSolutionExplorer": false
+}

@@ -8,7 +8,7 @@
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9387BD77-6E80-40F6-9DB0-11FAEFBD4074}</ProjectGuid>
-    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
     <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

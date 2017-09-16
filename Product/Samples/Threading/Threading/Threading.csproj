@@ -8,7 +8,7 @@
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DA82CC95-2B82-47CE-8AA3-CCEF562DE845}</ProjectGuid>
-    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
     <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>

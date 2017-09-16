@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="DigiCert" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\DigiCert.cer;System.Byte[], mscorlib, Version=4.4.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Resources\DigiCert.cer;System.Byte[], mscorlib, Version=4.3.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="Soap" xml:space="preserve">
     <value>&lt;s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://schemas.xmlsoap.org/ws/2004/08/addressing"&gt;

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="TinyCLR_Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+<Project DefaultTargets="TinyCLR_Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
   <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), BuildEnv.props))\BuildEnv.props" Condition="Exists('$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), BuildEnv.props))\BuildEnv.props')" />
   <PropertyGroup>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -24,12 +24,12 @@
     <SccProvider>SAK</SccProvider>
     <OutDir>$(BUILD_TREE_SERVER)\DLL\</OutDir>
   </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-        <RunCodeAnalysis>false</RunCodeAnalysis>
-        <CodeAnalysisRuleSet>Debugger.ruleset</CodeAnalysisRuleSet>
-        <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\Debugger.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>,DEBUG,TRACE,TINYCLR_BUILD_SERVER,TINYCLR_USESTRONGNAMES</DefineConstants>
@@ -42,6 +42,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinUsbInvoke">
+      <HintPath>..\..\..\BuildOutput\Public\Debug\Server\DLL\WinUsbInvoke.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />

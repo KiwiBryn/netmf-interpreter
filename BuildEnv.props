@@ -39,7 +39,7 @@
   </ItemGroup>
   
   <!-- Inlined task to add paths to the environment of this build -->
-  <UsingTask TaskName="SetEnvironmentBinPath" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll">
+  <UsingTask TaskName="SetEnvironmentBinPath" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
     <ParameterGroup>
       <Paths ParameterType="System.String" Required="true" />
     </ParameterGroup>

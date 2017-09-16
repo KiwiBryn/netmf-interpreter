@@ -11,8 +11,8 @@ if /i "%1" == "-h" goto :ShowUsage
 
 if "%FLAVOR_SDK%" == "" set FLAVOR_SDK=RTM
 
-if /i "%VSSDK140Install%"=="" goto :MissingVSSDK
-if NOT EXIST "%VSSDK140Install%" goto :MissingVSSDK
+if /i "%VSSDK150Install%"=="" goto :MissingVSSDK
+if NOT EXIST "%VSSDK150Install%" goto :MissingVSSDK
 
 SET BUILD_VERSION=%1
 if "%BUILD_VERSION%"=="" set BUILD_VERSION=0
@@ -24,13 +24,13 @@ if "%RELEASENAME%"=="" set RELEASENAME="(%USERNAME%)"
 SET WixMsiBuildNumberOverride=%5
 
 SET PRODVER_MAJOR=4
-SET PRODVER_MINOR=4
+SET PRODVER_MINOR=3
 IF "%WixMsiBuildNumberOverride%"=="" set WixMsiBuildNumberOverride=%BUILD_VERSION%
 
 set COMMON_BUILD_ROOT=%BUILD_SHARE%
 if NOT "%BUILD_BRANCH%"=="" set COMMON_BUILD_ROOT=%COMMON_BUILD_ROOT%\%BUILD_BRANCH%
 
-call setenv_vs.cmd 14
+call setenv_vs.cmd 15
 
 SET PORT_BUILD=
 
@@ -65,5 +65,5 @@ GOTO :EOF
 goto :EOF
 
 :MissingVSSDK
-@ECHO ERROR: Visual Studio 2015 SDK (VSSDK) was not detected, this SDK is required to build the .NET Micro Framework SDK source code
+@ECHO ERROR: Visual Studio 2017 SDK (VSSDK) was not detected, this SDK is required to build the .NET Micro Framework SDK source code
 goto :EOF

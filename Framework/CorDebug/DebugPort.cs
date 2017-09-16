@@ -192,9 +192,9 @@ namespace Microsoft.SPOT.Debugger
                         PortDefinition []portWinUSB;
                         
                         portUSB    = AsyncUsbStream.EnumeratePorts();
-                        portWinUSB = WinUsb_AsyncUsbStream.EnumeratePorts(EnablePermiscuousWinUSB);
+                        portWinUSB = WinUsb_AsyncUsbStream.EnumeratePorts();
 
-                        int lenUSB    = portUSB    != null ? portUSB.Length    : 0;
+                  int lenUSB    = portUSB    != null ? portUSB.Length    : 0;
                         int lenWinUSB = portWinUSB != null ? portWinUSB.Length : 0;
 
                         ports = new PortDefinition[lenUSB + lenWinUSB];

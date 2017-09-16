@@ -10,7 +10,7 @@
     <ProjectGuid>$guid1$</ProjectGuid>
     <MyType />
     <AssemblyBothEndian>true</AssemblyBothEndian>
-    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
     <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

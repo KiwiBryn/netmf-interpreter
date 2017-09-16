@@ -111,7 +111,7 @@ namespace Microsoft.SPOT.Debugger
             }
             else
             {
-                m_runtimeVersion = "v4.4";
+                m_runtimeVersion = "v4.3";
             }
         }
 

@@ -34,7 +34,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(NetMfTargetsBaseDir)\v4.4\Emulator.Targets" />
+  <Import Project="$(NetMfTargetsBaseDir)\v4.3\Emulator.Targets" />
   <ItemGroup>
     <Reference Include="Microsoft.SPOT.Emulator" />
     <Reference Include="Microsoft.SPOT.CLR">
